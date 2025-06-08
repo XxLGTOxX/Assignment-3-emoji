@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+#face {
+  position: relative;
+  background-image: url('../img/cara.png');
+  width: 80vmin;
+  height: 80vmin;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eye {
+  position: absolute;
+  width: 12vmin;
+  height: 12vmin;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#lefteye {
+  top: 34%;
+  left: 34%;
+}
+
+#righteye {
+  top: 34%;
+  right: 34%;
+}
+
+.pupil {
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  background: radial-gradient(circle at 30% 30%, #333, #000);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.08s ease;
+}
